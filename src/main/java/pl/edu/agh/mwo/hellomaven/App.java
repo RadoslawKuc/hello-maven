@@ -6,10 +6,13 @@ import com.indvd00m.ascii.render.api.IContextBuilder;
 import com.indvd00m.ascii.render.api.IRender;
 import com.indvd00m.ascii.render.elements.PseudoText;
 
-/**
+/*
  * Simple main application
  */
 public class App {
+    public static final int text_width = 120;
+    public static final int text_heigth = 120;
+    public static final int random = 120;
 
 
     public static void main(String[] args) {
@@ -18,16 +21,17 @@ public class App {
 
         IRender render = new Render();
         IContextBuilder builder = render.newBuilder();
-        builder.width(120).height(20);
+        builder.width(text_width).height(text_heigth);
         builder.element(new PseudoText("PseudoText"));
         ICanvas canvas = render.render(builder.build());
         String s = canvas.getText();
         System.out.println(s);
 
     }
+
     public int getRandomNumber() {
         // chosen by fair dice roll.
         // guaranteed to be random
-        return 4;
+        return random;
     }
 }
