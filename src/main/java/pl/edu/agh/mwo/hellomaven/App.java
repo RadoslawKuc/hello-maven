@@ -12,7 +12,7 @@ import com.indvd00m.ascii.render.elements.PseudoText;
 public class App {
     public static final int text_width = 120;
     public static final int text_heigth = 120;
-    public static final int random = 120;
+    public static final int random = 4;
 
 
     public static void main(String[] args) {

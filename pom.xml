@@ -39,7 +39,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>pl.edu.agh.mwo.hellomaven.App</mainClass>
+                            <mainClass>pl.edu.agh.mwo.hello-maven.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
